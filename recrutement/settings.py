@@ -149,3 +149,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'api', 'locale'),  # Chemin vers le dossier locale de votre application
 ]
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'urbainpatient5@gmail.com'
+EMAIL_HOST_PASSWORD = 'nngo chlw shwq jduf'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER 
+ADMIN_EMAIL = 'urbainpatient5@gmail.com'
