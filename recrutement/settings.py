@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'recrutement.urls'
@@ -135,9 +136,10 @@ LANGUAGES = [
     ('fr', _('Français')),
     ('en', _('English')),
     ('es', _('Español')),
+    ('ro', _('Română')), 
 ]
 
-LANGUAGE_CODE = 'fr'  # Langue par défaut
+LANGUAGE_CODE = 'en'  # Langue par défaut
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
